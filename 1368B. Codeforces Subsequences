@@ -1,0 +1,1120 @@
+#include<bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+using namespace std;
+#define ff              first
+#define ss              second
+#define int             long long int
+#define pb              push_back
+#define mp              make_pair
+#define pii             pair<int,int>
+#define vi              vector<int>
+#define mii             map<int,int>
+#define maxheap         priority_queue<int>
+#define minheap         priority_queue<int,vi,greater<int> >
+#define mod             1000000007
+#define inf             1e18
+#define f(i,n)          for(int i=0;i<n;i++)
+#define w(x)            int x; cin>>x; while(x--)
+#define ps(x,y)         fixed<<setprecision(y)<<x
+#define setbits(x)      __builtin_popcountll(x)
+#define zerobits(x)     __builtin_ctzll(x)
+#define mk(arr,n,type)  type *arr=new type[n];
+#define PI 3.1415926535
+mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
+ 
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds;
+ 
+ 
+ 
+int32_t main() {
+	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+ 
+ 
+	int k;
+	cin >> k;
+	//cout << "codeforces";
+ 
+	int ns = 0, nc = 0;
+	int prod = 1;
+	int cnt = 1;
+	int w = pow(cnt, 10);
+	int prev = w;
+	if (k == 10000000000000000)
+	{
+		w = pow(40, 10);
+		prev = 40;
+	}
+	int np;
+	for (int i = 1; i <= 40; i++)
+	{
+		prev = i;
+		np = i + 1;
+		if (i != 40)
+		{
+ 
+			int prod0 = pow(prev, 10);
+			prod = pow(prev, 9) * pow(np, 1);
+			int prod1 = pow(prev, 8) * pow(np, 2);
+			int prod2 = pow(prev, 7) * pow(np, 3);
+			int prod3 = pow(prev, 6) * pow(np, 4);
+			int prod4 = pow(prev, 5) * pow(np, 5);
+			int prod5 = pow(prev, 4) * pow(np, 6);
+			int prod6 = pow(prev, 3) * pow(np, 7);
+			int prod7 = pow(prev, 2) * pow(np, 8);
+			int prod8 = pow(prev, 1) * pow(np, 9);
+			int prod9 = pow(prev, 0) * pow(np, 10);
+			if (prod0 >= k)
+			{
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+ 
+			}
+			else if (prod >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod1 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod2 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod3 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod4 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod5 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod6 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+ 
+			}
+			else if (prod7 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+			else if (prod8 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= prev; i++)
+				{
+					cout << "s";
+				}
+				break;
+ 
+			}
+			else if (prod9 >= k)
+			{
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "d";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "f";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "o";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "r";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "c";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "e";
+				}
+				for (int i = 1; i <= np; i++)
+				{
+					cout << "s";
+				}
+				break;
+			}
+		}
+		else
+		{
+			prev = 40;
+ 
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "c";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "o";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "d";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "e";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "f";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "o";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "r";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "c";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "e";
+			}
+			for (int i = 1; i <= prev; i++)
+			{
+				cout << "s";
+			}
+ 
+ 
+		}
+ 
+	}
+	//cout << w << endl;
+ 
+	// while (w < k)
+	// {
+	// 	prev = cnt;
+	// 	cnt++;
+	// 	w = pow(cnt, 10);
+	// }
+	// int r = pow(prev, 10);
+	// int diff = k - r;
+	// int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
+	// int np = prev + 1;
+	// int prod0 = pow(prev, 10);
+	// prod = pow(prev, 9) * pow(np, 1);
+	// int prod1 = pow(prev, 8) * pow(np, 2);
+	// int prod2 = pow(prev, 7) * pow(np, 3);
+	// int prod3 = pow(prev, 6) * pow(np, 4);
+	// int prod4 = pow(prev, 5) * pow(np, 5);
+	// int prod5 = pow(prev, 4) * pow(np, 6);
+	// int prod6 = pow(prev, 3) * pow(np, 7);
+	// int prod7 = pow(prev, 2) * pow(np, 8);
+	// int prod8 = pow(prev, 1) * pow(np, 9);
+	// int prod9 = pow(prev, 0) * pow(np, 10);
+	// //cout << prev << endl << np << endl;
+	// //cout << prod << endl;
+	// if (prod0 >= k)
+	// {
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+ 
+	// }
+	// else if (prod >= k)
+	// {
+ 
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod1 >= k)
+	// {
+	// 	//cout << "hola\n";
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod2 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod3 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod4 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod5 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod6 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod7 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod8 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= prev; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+	// }
+	// else if (prod9 >= k)
+	// {
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "d";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "f";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "o";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "r";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "c";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "e";
+	// 	}
+	// 	for (int i = 1; i <= np; i++)
+	// 	{
+	// 		cout << "s";
+	// 	}
+ 
+	// }
+	//cout << cnt << endl;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
